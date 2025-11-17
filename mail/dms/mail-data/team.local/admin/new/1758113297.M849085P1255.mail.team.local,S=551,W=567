@@ -1,0 +1,16 @@
+Return-Path: <root@mail.team.local>
+Delivered-To: admin@team.local
+Received: from mail.team.local
+	by mail.team.local with LMTP
+	id uGGQMhGuymjnBAAAhulYcw
+	(envelope-from <root@mail.team.local>)
+	for <admin@team.local>; Wed, 17 Sep 2025 12:48:17 +0000
+Received: by mail.team.local (Postfix, from userid 0)
+	id CE676719632; Wed, 17 Sep 2025 12:48:17 +0000 (UTC)
+From: user@team.local
+To: admin@team.local
+Subject: LAB: user -> admin
+Message-Id: <20250917124817.CE676719632@mail.team.local>
+Date: Wed, 17 Sep 2025 12:48:17 +0000 (UTC)
+
+hello from user.

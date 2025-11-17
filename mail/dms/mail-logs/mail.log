@@ -1,0 +1,57 @@
+2025-09-17T12:48:06.076811+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2025-09-17T12:48:06.507610+00:00 mail opendkim[737]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2025-09-17T12:48:06.618152+00:00 mail opendmarc[746]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2025-09-17T12:48:06.618171+00:00 mail opendmarc[746]: additional trusted authentication services: mail.team.local
+2025-09-17T12:48:06.894323+00:00 mail postfix/postfix-script[850]: starting the Postfix mail system
+2025-09-17T12:48:06.897852+00:00 mail postfix/master[851]: daemon started -- version 3.7.11, configuration /etc/postfix
+2025-09-17T12:48:07.176274+00:00 mail amavis[798]: starting. /usr/sbin/amavisd at mail.team.local amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2025-09-17T12:48:07.176305+00:00 mail amavis[798]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2025-09-17T12:48:07.186245+00:00 mail amavis[798]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2025-09-17T12:48:07.186274+00:00 mail amavis[798]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2025-09-17T12:48:07.190131+00:00 mail amavis[798]: No ext program for   .zoo, tried: zoo
+2025-09-17T12:48:07.190166+00:00 mail amavis[798]: No ext program for   .doc, tried: ripole
+2025-09-17T12:48:07.190292+00:00 mail amavis[798]: No ext program for   .zst, tried: unzstd
+2025-09-17T12:48:07.190313+00:00 mail amavis[798]: No decoder for       .F   
+2025-09-17T12:48:07.190316+00:00 mail amavis[798]: No decoder for       .doc 
+2025-09-17T12:48:07.190319+00:00 mail amavis[798]: No decoder for       .zoo 
+2025-09-17T12:48:07.190321+00:00 mail amavis[798]: No decoder for       .zst 
+2025-09-17T12:48:17.791418+00:00 mail postfix/pickup[852]: C1329719631: uid=0 from=<root>
+2025-09-17T12:48:17.795510+00:00 mail postfix/cleanup[1252]: C1329719631: message-id=<20250917124817.C1329719631@mail.team.local>
+2025-09-17T12:48:17.796267+00:00 mail opendkim[737]: C1329719631: localhost [127.0.0.1] not internal
+2025-09-17T12:48:17.796283+00:00 mail opendkim[737]: C1329719631: not authenticated
+2025-09-17T12:48:17.796802+00:00 mail opendkim[737]: C1329719631: no signature data
+2025-09-17T12:48:17.797561+00:00 mail postfix/qmgr[853]: C1329719631: from=<root@mail.team.local>, size=343, nrcpt=1 (queue active)
+2025-09-17T12:48:17.806979+00:00 mail dovecot: lmtp(1255): Connect from local
+2025-09-17T12:48:17.811887+00:00 mail dovecot: lmtp(user@team.local)<1255><XVkXMBGuymjnBAAAhulYcw>: sieve: msgid=<20250917124817.C1329719631@mail.team.local>: stored mail into mailbox 'INBOX'
+2025-09-17T12:48:17.812099+00:00 mail postfix/lmtp[1254]: C1329719631: to=<user@team.local>, relay=mail.team.local[/var/run/dovecot/lmtp], delay=0.02, delays=0.01/0/0.01/0, dsn=2.0.0, status=sent (250 2.0.0 <user@team.local> XVkXMBGuymjnBAAAhulYcw Saved)
+2025-09-17T12:48:17.812119+00:00 mail dovecot: lmtp(1255): Disconnect from local: Logged out (state=READY)
+2025-09-17T12:48:17.812194+00:00 mail postfix/qmgr[853]: C1329719631: removed
+2025-09-17T12:48:17.845479+00:00 mail postfix/pickup[852]: CE676719632: uid=0 from=<root>
+2025-09-17T12:48:17.846295+00:00 mail postfix/cleanup[1252]: CE676719632: message-id=<20250917124817.CE676719632@mail.team.local>
+2025-09-17T12:48:17.847050+00:00 mail opendkim[737]: CE676719632: localhost [127.0.0.1] not internal
+2025-09-17T12:48:17.847067+00:00 mail opendkim[737]: CE676719632: not authenticated
+2025-09-17T12:48:17.847536+00:00 mail opendkim[737]: CE676719632: no signature data
+2025-09-17T12:48:17.848061+00:00 mail postfix/qmgr[853]: CE676719632: from=<root@mail.team.local>, size=342, nrcpt=1 (queue active)
+2025-09-17T12:48:17.848536+00:00 mail dovecot: lmtp(1255): Connect from local
+2025-09-17T12:48:17.851743+00:00 mail dovecot: lmtp(admin@team.local)<1255><uGGQMhGuymjnBAAAhulYcw>: sieve: msgid=<20250917124817.CE676719632@mail.team.local>: stored mail into mailbox 'INBOX'
+2025-09-17T12:48:17.851905+00:00 mail postfix/lmtp[1254]: CE676719632: to=<admin@team.local>, relay=mail.team.local[/var/run/dovecot/lmtp], delay=0.01, delays=0/0/0/0, dsn=2.0.0, status=sent (250 2.0.0 <admin@team.local> uGGQMhGuymjnBAAAhulYcw Saved)
+2025-09-17T12:48:17.851985+00:00 mail postfix/qmgr[853]: CE676719632: removed
+2025-09-17T12:48:17.851985+00:00 mail dovecot: lmtp(1255): Disconnect from local: Logged out (state=READY)
+2025-09-18T07:57:01.673115+00:00 mail dovecot: master: Dovecot v2.3.19.1 (9b53102964) starting up for imap, lmtp
+2025-09-18T07:57:01.001252+00:00 mail opendkim[224]: OpenDKIM Filter v2.11.0 starting (args: -f)
+2025-09-18T07:57:01.091015+00:00 mail opendmarc[230]: OpenDMARC Filter v1.4.2 starting (args: -f -p inet:8893@localhost -P /var/run/opendmarc/opendmarc.pid)
+2025-09-18T07:57:01.091035+00:00 mail opendmarc[230]: additional trusted authentication services: mail.team.local
+2025-09-18T07:57:01.386490+00:00 mail postfix/postfix-script[315]: starting the Postfix mail system
+2025-09-18T07:57:01.390692+00:00 mail postfix/master[316]: daemon started -- version 3.7.11, configuration /etc/postfix
+2025-09-18T07:57:01.453470+00:00 mail dovecot: log(179): Warning: Time moved backwards by 0.223577 seconds.
+2025-09-18T07:57:02.005365+00:00 mail amavis[317]: starting. /usr/sbin/amavisd at mail.team.local amavis-2.13.0 (20230106), Unicode aware, LC_CTYPE="C.UTF-8"
+2025-09-18T07:57:02.005402+00:00 mail amavis[317]: perl=5.036000, user=, EUID: 999 (999);  group=(), EGID: 999 999 (999 999)
+2025-09-18T07:57:02.062072+00:00 mail amavis[317]: Net::Server: Group Not Defined.  Defaulting to EGID '999 999'
+2025-09-18T07:57:02.062101+00:00 mail amavis[317]: Net::Server: User Not Defined.  Defaulting to EUID '999'
+2025-09-18T07:57:02.068604+00:00 mail amavis[317]: No ext program for   .zoo, tried: zoo
+2025-09-18T07:57:02.068782+00:00 mail amavis[317]: No ext program for   .doc, tried: ripole
+2025-09-18T07:57:02.069344+00:00 mail amavis[317]: No ext program for   .zst, tried: unzstd
+2025-09-18T07:57:02.069367+00:00 mail amavis[317]: No decoder for       .F   
+2025-09-18T07:57:02.069370+00:00 mail amavis[317]: No decoder for       .doc 
+2025-09-18T07:57:02.069373+00:00 mail amavis[317]: No decoder for       .zoo 
+2025-09-18T07:57:02.069375+00:00 mail amavis[317]: No decoder for       .zst 

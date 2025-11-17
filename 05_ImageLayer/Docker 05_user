@@ -1,0 +1,12 @@
+From auay.io/cnetos/centos;stream9
+
+# useradd user01
+RUN ["useradd" , "user01"]
+RUN ["id"]
+
+USER user01
+RUN ["id"]
+
+
+
+
